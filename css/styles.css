@@ -36,6 +36,7 @@ label {
 .col-md-6 {
   background-color: rgba(0, 0, 0, 0.7);
   padding: 10px;
+  margin: 10px;
 }
 
 .col-md-5 {
