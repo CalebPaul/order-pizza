@@ -11,42 +11,53 @@
   <body>
     <div class="container">
       <h1 class="well text-center">Pizza</h1>
-      <form id="new_order">
-        <div class="form-group">
-          <label for="order-name">Name</label>
-          <input id="order_name" type="text" class="form-control" placeholder="Name">
-        </div>
-        <div class="radio">
-          <h4>What size pizza would you like?</h4>
-          <label><input type="radio" name="size" value="slice">Slice</label>
-          <label><input type="radio" name="size" value="med">Medium Pizza</label>
-          <label><input type="radio" name="size" value="large">Large Pizza</label>
-        </div>
-        <div class="checkbox">
-          <h4>What toppings would you like?</h4>
-          <label class="form-check-label">
-            <input class="form-check-input" type="checkbox" name="toppings" value="extraCheese" checked>
-            Extra Cheese
-          </label>
-          <label class="form-check-label">
-            <input class="form-check-input" type="checkbox" name="toppings" value="Pepperoni">
-            Pepperoni
-          </label>
-          <label class="form-check-label">
-            <input class="form-check-input" type="checkbox" name="toppings" value="pineapple" checked>
-            Pineapple
-          </label>
-          <label class="form-check-label">
-            <input class="form-check-input" type="checkbox" name="toppings" value="anchovies">
-            Anchovies
-          </label>
-          <label class="form-check-label">
-            <input class="form-check-input" type="checkbox" name="toppings" value="garlic">
-            Roasted Garlic
-          </label>
-      </div>
-      </form>
+      <div class="row">
+        <div class="col-md-6">
 
+          <form id="new_order">
+            <div class="form-group">
+              <label for="order-name">Name</label>
+              <input id="order_name" type="text" class="form-control" placeholder="Name" value="Caleb">
+            </div>
+            <div class="radio">
+              <h4>What size pizza would you like?</h4>
+              <label><input type="radio" name="size" value="slice">Slice</label>
+              <label><input type="radio" name="size" value="med" checked="">Medium Pizza</label>
+              <label><input type="radio" name="size" value="large">Large Pizza</label>
+            </div>
+            <div class="checkbox">
+              <h4>What toppings would you like?</h4>
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="toppings" value="extraCheese" checked>
+                Extra Cheese
+              </label>
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="toppings" value="Pepperoni">
+                Pepperoni
+              </label>
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="toppings" value="pineapple" checked>
+                Pineapple
+              </label>
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="toppings" value="anchovies">
+                Anchovies
+              </label>
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="toppings" value="garlic">
+                Roasted Garlic
+              </label>
+            </div>
+            <div class="radio">
+              <h4>Delivery or Pickup?</h4>
+              <label><input type="radio" name="delivery" value="delivery" checked>Delivery</label>
+              <label><input type="radio" name="delivery" value="pickup">Pick Up</label>
+            </div>
+
+            <button class="btn" type="submit" name="button">Submit Order!</button>
+          </form>
+        </div>
+      </div>
     </div>
   </body>
 </html>
