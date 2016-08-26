@@ -7,10 +7,12 @@ body {
 
 h1 {
   font-family: 'Cutive Mono', monospace;
+  font-size: 70px;
 }
 
 h3, h4, h5 {
   font-family: 'Josefin Slab', serif;
+  font-size-adjust: auto;
 }
 
 label {
@@ -18,7 +20,7 @@ label {
 }
 
 .well {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     border-width: 0;
 }
 
@@ -28,23 +30,23 @@ label {
 
 * {
   color: white;
-  font-size: 18px
+  font-size: 20px;
 }
 
 .col-md-6 {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 10px;
 }
 
 .col-md-5 {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 10px;
 }
 
 .form-control {
   opacity: .5;
   color: #a81d00;
-  font-size: 17px;
+  font-size: 20px;
   font-weight: bold;
   font-family: 'Josefin Slab', serif;
 }
