@@ -1,3 +1,13 @@
 .container {
   width: 85%;
 }
+
+/** {
+  color: white;
+}*/
+
+body {
+  background-image: url(../img/pzbg4.jpg);
+  background-size:cover;
+  background-attachment: fixed;
+}
