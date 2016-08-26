@@ -15,7 +15,7 @@ _The final cost is based on the size of the pizza, and how many toppings it has.
 * _Clone this repository (https://github.com/CalebPaul/order-pizza.git) to your desktop_
 * _Open index.html in the browser of your choosing_
 
-* _Alternatively, navigate to (gh-pages link)_
+* _Alternatively, navigate to (https://calebpaul.github.io/order-pizza/)_
 
 ## Known Bugs
 
