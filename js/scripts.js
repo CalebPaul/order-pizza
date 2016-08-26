@@ -3,9 +3,10 @@ function Order(name, size, toppings, delivery){
   this.name = name;
   this.size = size;
   this.toppings = toppings;
-  this.delivery = true;
+  this.delivery = delivery;
 }
 
+//prototype
 Order.prototype.orderCost = function(price){
   if (this.size === "slice"){
     price -= 8;
@@ -15,8 +16,10 @@ Order.prototype.orderCost = function(price){
   if (this.toppings.length > 0) {
     price += (this.toppings.length / 2);
   }
-  console.log("length: "+this.toppings.length);
-  console.log("price: "+price);
+  if (this.delivery === "delivery") {
+    price += 2;
+  }
+  console.log("total price: "+price);
   return price;
 }
 
@@ -26,22 +29,13 @@ $(document).ready(function() {
     event.preventDefault();
     var price = 12;
     var newName = $("#order_name").val();
-    console.log(newName);
     var newSize = $("input:radio[name=size]:checked").val();
-    console.log(newSize);
     var newToppings = $("input:checkbox[name=toppings]:checked").map(function () {
       return this.value;
     }).get();
-    console.log(newToppings);
-
-    // console.log("array length "+parseInt(Object.keys(newToppings).length));
-
     var newDeliv = $("input:radio[name=delivery]:checked").val();
-    console.log(newDeliv);
     var newOrder = new Order(newName, newSize, newToppings, newDeliv)
     console.log(newOrder);
-
-
     newOrder.orderCost(price);
   })
 });
