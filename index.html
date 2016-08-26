@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Josefin+Slab" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="js/jquery-3.1.0.js"></script>
@@ -10,10 +12,10 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="well text-center">Pizza</h1>
+      <h1 class="well text-center">Fireflower Pizza</h1>
       <div class="row">
         <div class="col-md-6">
-
+          <h3 class="page-header">Order Form:</h3>
           <form id="new_order">
             <div class="form-group">
               <label for="order-name">Name</label>
@@ -21,12 +23,12 @@
             </div>
             <div class="radio">
               <h4>How much pizza would you like?</h4>
-              <label><input type="radio" name="size" value="slice" checked>A Slice!</label>
-              <label><input type="radio" name="size" value="med">A Medium Pizza!</label>
-              <label><input type="radio" name="size" value="large">A Large Pizza!</label>
+              <label><input type="radio" name="size" value="Slice" checked>A Slice!</label>
+              <label><input type="radio" name="size" value="Med">A Medium Pizza!</label>
+              <label><input type="radio" name="size" value="Large">A Large Pizza!</label>
             </div>
             <div class="checkbox">
-              <h4>What toppings would you like?</h4>
+              <h4>Which toppings would you like?</h4>
               <label class="form-check-label">
                 <input class="form-check-input" type="checkbox" name="toppings" value="extraCheese" checked>
                 Extra Cheese
@@ -50,12 +52,13 @@
             </div>
             <div class="radio">
               <h4>Delivery or Pickup?</h4>
-              <label><input type="radio" name="delivery" value="delivery" checked>Delivery</label>
-              <label><input type="radio" name="delivery" value="pickup">Pick Up</label>
+              <label><input type="radio" name="delivery" value="delivery">Delivery</label>
+              <label><input type="radio" name="delivery" value="takeout" checked>Pick Up</label>
             </div>
-
-            <button class="btn" type="submit" name="button">Submit Order!</button>
+            <button class="btn btn-danger" type="submit" name="button">Submit Order!</button>
           </form>
+        </div>
+        <div id="receipt">
         </div>
       </div>
     </div>
