@@ -19,7 +19,10 @@ $(document).ready(function() {
     console.log(newName);
     var newSize = $("input:radio[name=size]:checked").val();
     console.log(newSize);
-    var newToppings = $("input:checkbox[name=toppings]:checked").val();
+
+    var newToppings = new Array($("input:checkbox[name=toppings]:checked").map(function () {
+      return this.value;
+    }).get());
     console.log(newToppings);
     var newDeliv = $("input:radio[name=delivery]:checked").val();
     console.log(newDeliv);
