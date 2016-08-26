@@ -8,9 +8,9 @@ function Order(name, size, toppings, delivery){
 
 //prototype
 Order.prototype.orderCost = function(price){
-  if (this.size === "slice"){
+  if (this.size === "Slice"){
     price -= 8;
-  } else if (this.size === "large") {
+  } else if (this.size === "Large") {
     price += 4;
   }
   if (this.toppings.length > 0) {
@@ -37,5 +37,14 @@ $(document).ready(function() {
     var newOrder = new Order(newName, newSize, newToppings, newDeliv)
     console.log(newOrder);
     newOrder.orderCost(price);
+
+//append to html
+    $("#receipt").text("");
+    $("#receipt").append("<div id='receipt' class='col-md-5 pull-right text-center animated flipInY'>" +
+                            "<h3 class='page-header'>" + newName + "'s Order: </h3>" +
+                            "<h4>" + "Pizza Size: " + newSize + "</h4>" +
+                            "<h4>" + "for: " + newDeliv + "</h4>" +
+                            "<h3>" + "Total Cost: $" + newOrder.orderCost(price) + "</h3>" +
+                            "</div>");
   })
 });

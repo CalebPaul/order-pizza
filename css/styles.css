@@ -1,13 +1,56 @@
-.container {
-  width: 85%;
-}
-
-/** {
-  color: white;
-}*/
-
 body {
   background-image: url(../img/pzbg4.jpg);
   background-size:cover;
   background-attachment: fixed;
+  padding: 30px;
+}
+
+h1 {
+  font-family: 'Cutive Mono', monospace;
+}
+
+h3, h4, h5 {
+  font-family: 'Josefin Slab', serif;
+}
+
+label {
+  font-family: 'Josefin Slab', serif;
+}
+
+.well {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-width: 0;
+}
+
+.container {
+  width: 85%;
+}
+
+* {
+  color: white;
+  font-size: 18px
+}
+
+.col-md-6 {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+.col-md-5 {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+.form-control {
+  opacity: .5;
+  color: #a81d00;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: 'Josefin Slab', serif;
+}
+
+.btn-danger {
+    color: #white;
+    background-color: #a81d00;
+    border-color: #4c3f3d;
 }

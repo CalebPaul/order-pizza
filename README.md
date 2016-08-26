@@ -1,28 +1,33 @@
-# _Project Name_
+# _Pizza Order Site_
 
-#### _Project Name_ _00-00-0000_
+#### _08-26-2016_
 
 #### By _**Caleb Paul**_
 
 ## Description
 
-_ _
-_ _
-_ _
-_ _
+_An order page for an imaginary Pizzeria where a user can choose one or more individual toppings and a size to order a pizza and see their final cost._
+
+_The final cost is based on the size of the pizza, and how many toppings it has.  There is also added cost for delivery._
+
 ## Setup/Installation Requirements
 
-* _Clone this repository (githublink to your desktop_
+* _Clone this repository (https://github.com/CalebPaul/order-pizza.git) to your desktop_
 * _Open index.html in the browser of your choosing_
 
-* _Alternatively, navigate to gh-pages link_
+* _Alternatively, navigate to (gh-pages link)_
 
 ## Known Bugs
 
 _None known_
 
-##Specifications
-
+## Specifications
+* Site will generate price based on:
+    1. Number of toppings selected
+    2. Size of Pizza selected
+    3. Delivery or takeout selection
+* Site will display receipt with total price once order is submitted
+* Site will display new reciept for additional orders
 
 
 ## Support and contact details
